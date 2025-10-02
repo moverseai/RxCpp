@@ -159,7 +159,7 @@ target_include_directories(rxcpp INTERFACE
 )
 
 install(TARGETS rxcpp EXPORT rxcppConfig)
-install(EXPORT rxcppConfig DESTINATION share/rxcpp/cmake)
+install(EXPORT rxcppConfig DESTINATION share/rxcpp-moverse/cmake)
 
 # When find_package(rxcpp SOME_VERSION REQUIRED) will be used in third party project
 # where SOME_VERSION is any version incompatible with ${PROJECT_VERSION} then cmake will generate the error.
@@ -171,4 +171,4 @@ write_basic_package_version_file("${PROJECT_BINARY_DIR}/rxcppConfigVersion.cmake
     COMPATIBILITY
         AnyNewerVersion
 )
-install(FILES "${PROJECT_BINARY_DIR}/rxcppConfigVersion.cmake" DESTINATION share/rxcpp/cmake)
+install(FILES "${PROJECT_BINARY_DIR}/rxcppConfigVersion.cmake" DESTINATION share/rxcpp-moverse/cmake)
